@@ -49,5 +49,14 @@ efficiency ,οπου αποδοσηXeon=40*απόδοσηARM  ισχύς Xeon=77
 αλλά παραμένει ανοικτός (στην καλύτερη idle).Γνωρίζουμε όμως ότι ακόμα και στην αδράνεια ο επεξεργαστής καταναλώνει ενέργεια,
 συνεπώς η κατανάλωση του xeon θα παραμείνει πολύ υψηλότερη απο ότι του ARM και άρα ,ο ΑRM  συμφέρει ακόμα περισσότερο.
 
+
+#2ο Μέρος
+
+Για το energy , γνωρίζουμε το runtime dynamic  για το core και το l2 , που ειναι η  ισχύς που καταναλώθηκε κατα τη διάρκεια
+εκτέλεσης του προγράμματος,επομένως πολλαπλασιάζοντας αυτα τα 2 με το sim_seconds που παράγει ο gem5 παίρνουμε  τo 
+Ε=sim_seconds*runtime dynamic.Το delay είναι ο χρόνος εκτέλεσης του προγράμματος που το παίρνουμε απο το stats.txt του gem5.
+
+
+http://www.eecs.harvard.edu/~dbrooks/cs246/cs246-lecture2.pdf
 https://www.sciencedirect.com/topics/computer-science/dynamic-power-consumption
 https://vlsi.pro/power-dissipation-leakage-power/
